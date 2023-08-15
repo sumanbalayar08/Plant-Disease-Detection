@@ -135,16 +135,4 @@ hist = model.fit(train_batches, epochs=epochs, steps_per_epoch=steps_per_epoch, 
 model.save(model_save_location )
 plot_accuracy_and_loss(hist)
 
-#Testing the Model
-test_labels = test_batches.classes
-print("Test Labels",test_labels)
-print(test_batches.class_indices)
-
-predictions = model.predict(test_batches,steps=len(test_batches),verbose=0)
-
-acc = 0
-for i in range(len(test_labels)):
-    actual_class = test_labels[i]
-    if predictions[i][actual_class] > 0.5 : 
-        acc += 1
-print("Accuarcy:",(acc/len(test_labels))*100,"%")
+print("Model Trained and Saved Successfully")
