@@ -11,14 +11,14 @@ from tensorflow.keras.applications import EfficientNetB0
 
 NUM_CLASSES = 10
 
-train_path = r"D:\MajorProject/tomato/train/"
-valid_path = r"D:\MajorProject/tomato/validation/"
-test_path = r"D:\MajorProject/tomato/test/"
+train_path = r"D:\MajorProject/Plant-Disease-Detection/train/"
+valid_path = r"D:\MajorProject/Plant-Disease-Detection/validation/"
+test_path = r"D:\MajorProject/Plant-Disease-Detection/test/"
 
-epochs = 5
-steps_per_epoch = 1000  # Set the desired number of steps per epoch
+epochs = 2
+steps_per_epoch = 100  # Set the desired number of steps per epoch
 
-model_save_location = r"D:\MajorProject\tomato\EfficientNet"
+model_save_location = r"D:\MajorProject\Plant-Disease-Detection\EfficientNet"
 
 #Building the Model
 
